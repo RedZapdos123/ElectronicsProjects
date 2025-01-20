@@ -1,4 +1,4 @@
-# THe Electronics Projects' Repository
+# The Electronics Projects' Repository
 
 ## This repository has been made:
 - To store my projects involving programming a mictrocontroller.
