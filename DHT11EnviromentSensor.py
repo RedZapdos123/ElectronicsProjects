@@ -1,5 +1,5 @@
 #This micropython program is compatible with DHT11. and DHT22 senors
-#for reading and displaying the enviromental temperature and realative humidity.
+#for reading and displaying the enviromental temperature and relative humidity.
 
 import machine
 import utime
@@ -7,7 +7,7 @@ import dht
 
 #Initializing the pins for input and output
 
-#The sensor pin setup with in-built pull-up resistor setup.
+#The sensor pin setup with in-built pull-up resistor.
 sensorPin = machine.Pin(15, machine.Pin.IN, machine.Pin.PULL_UP)
 dhtSensor = dht.DHT11(sensorPin)
 
@@ -35,7 +35,7 @@ def readAndDisplay():
         utime.sleep(2)
         
     except Exception as e:
-        print("Failed to read from DHT11 sensor:", e)
+        print("Failed to read from the DHT11?22 sensor:", e)
         led.value(0)
 
 #Infinitely reads and displays the data until interrupted.
